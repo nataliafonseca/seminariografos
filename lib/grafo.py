@@ -704,3 +704,11 @@ class Grafo:
               f"para a utilização logo de cara. A lista 1 corresponde "
               f"àqueles que precisam de, pelo menos, 1 iteração, e assim "
               f"por diânte")
+
+    @staticmethod
+    def get_grafo(grafo_id):
+        with open("grafos.json", "r") as grafos_json:
+            for line in grafos_json:
+                grafo = decode(line)
+                if grafo._id_grafo == grafo_id:
+                    return grafo

@@ -3,12 +3,9 @@ from colorama import Fore, init as color
 
 color()
 
-grafo_farmaceuticos = Grafo(False, False,
-                     ["F1", "F2", "F3", "F4", "F5", "F6", "F7"],
-                     ["F1-F2", "F1-F6", "F1-F7", "F2-F3", "F2-F4", "F3-F4",
-                      "F3-F5", "F4-F5", "F4-F6", "F5-F6", "F5-F7", "F6-F7"])
+grafo = Grafo.get_grafo("farmaceuticos")
 
-vertices_nao_coloridos = grafo_farmaceuticos._vertices
+vertices_nao_coloridos = grafo._vertices
 cores = [[]]
 
 for vertice in vertices_nao_coloridos:
@@ -17,7 +14,7 @@ for vertice in vertices_nao_coloridos:
         ha_adjacente = False
         if vertice in cores[idx]:
             break
-        for adjacente in grafo_farmaceuticos.get_adjacentes(vertice):
+        for adjacente in grafo.get_adjacentes(vertice):
             if adjacente in cores[idx]:
                 ha_adjacente = True
                 break
