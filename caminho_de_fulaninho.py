@@ -27,8 +27,6 @@ grafo_caminho = Grafo(True, True,
 
 origem = "v1"
 destinos = ["v3", "v4", "v19", "v26", "v28"]
-destinos_copy = ["v3", "v4", "v19", "v26", "v28"]
-
 
 # noinspection PyUnboundLocalVariable
 def dijkstra(grafo, vertice_origem, vertices_destino):
