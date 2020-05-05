@@ -3,7 +3,7 @@ from colorama import Fore, init as color
 
 color()
 
-grafo = Grafo.get_grafo("farmaceuticos")
+grafo = Grafo.retorna_grafo("farmaceuticos")
 
 vertices_nao_coloridos = grafo._vertices
 cores = [[]]

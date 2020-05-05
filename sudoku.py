@@ -4,7 +4,7 @@ from colorama import Fore, init as color
 
 color()
 
-grafo = Grafo.get_grafo("sudoku")
+grafo = Grafo.retorna_grafo("sudoku")
 
 
 def colorir(grafo):

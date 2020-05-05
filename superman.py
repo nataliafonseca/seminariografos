@@ -3,7 +3,7 @@ from colorama import Fore, init as color
 
 color()
 
-grafo = Grafo.get_grafo("superman")
+grafo = Grafo.retorna_grafo("superman")
 
 lista_de_listas = []
 while grafo._vertices:

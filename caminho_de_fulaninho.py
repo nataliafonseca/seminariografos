@@ -4,7 +4,7 @@ from colorama import Fore, init as color
 
 color()
 
-grafo = Grafo.get_grafo("caminho_fulaninho")
+grafo = Grafo.retorna_grafo("caminho_fulaninho")
 
 origem = "v1"
 destinos = ["v3", "v4", "v19", "v26", "v28"]

@@ -4,7 +4,7 @@ from colorama import Fore, init as color
 
 color()
 
-grafo = Grafo.get_grafo("heroi_e_moedas")
+grafo = Grafo.retorna_grafo("heroi_e_moedas")
 
 vertice_origem = "1"
 moedas = ["5", "9", "12", "15", "16", "18", "21", "25", "28"]

@@ -4,7 +4,7 @@ from colorama import Fore, init as color
 
 color()
 
-grafo = Grafo.get_grafo("star_wars")
+grafo = Grafo.retorna_grafo("star_wars")
 
 vertice_origem = "YODA"
 vertice_destino = "PRINCESS LEIA ORGANA"
